@@ -25,7 +25,7 @@
                 </svg>
             </a></p>
         <hr>
-        <p><small>Copyright © Trident Computer College Web Design Department</small></p>
+        <p><small>Copyright ©2023 Trident Computer College Web Design Department</small></p>
     </footer>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
