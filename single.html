@@ -1,0 +1,149 @@
+<?php get_header(); ?>
+
+<main>
+  <article class="article">
+    <div class="article-header">
+      <h1>map()？new Map？</h1>
+      <div class="post-info">
+        <p class="category-tag">web制作Tips</p>
+        <p class="post-time">
+          <time datetime="2023-08-10">2023年8月10日</time>
+          <span class="update"
+            >最終更新日：<time datetime="2023-08-10">2023年8月15日</time></span
+          >
+        </p>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="document">
+        <p>
+          夏休みのような長期休暇は、普段なかなか調べられないことや学習などに時間を費やしたいところです。<br />最近では、JavaScriptのフレームワークを触わることも増え、mapなんちゃらと、よく見かけます。なんか新しいループの便利機能ぐらいに思ってました。
+        </p>
+        <p>
+          そうしたら、new
+          Mapなんてのも見かけるようになって「あぁ、これは区別がつかなくなりそう」ということで、調べてみました。
+        </p>
+
+        <div class="post-img">
+          <img src="images/map_thumbnail.png" alt="map?イメージ" />
+        </div>
+
+        <p>
+          map()メソッドは、配列イテレーターメソッドで、配列をループして、配列の要素を順番に指定した関数に渡す動きをします。イテレータ（Iterator）とはデータ構造の各要素に対して繰り返し処理によって要素を返す仕組みです。
+        </p>
+        <h2>Array.map()</h2>
+        <p>
+          array.map()は、JavaScriptの配列の要素を変換するための便利なメソッドの一つです。<br />
+          このメソッドは元の配列の要素を1つずつ順番に取り出し、指定されたコールバック関数を適用して新しい要素を生成し、それらを含む新しい配列を返します。
+        </p>
+
+        <p></p>
+        <p><a href="#">参考：Array.prototype.map() - JavaScript | MDN</a></p>
+
+        <pre class="line-numbers"><code class="language-js"> // 元の配列
+const numbers = [1, 2, 3, 4, 5];
+
+// 各要素を2倍に変換する新しい配列を生成
+const doubledNumbers = numbers.map((num) => {
+  return num * 2;
+});
+
+console.log(doubledNumbers);
+// 出力: [2, 4, 6, 8, 10]</code></pre>
+
+        <h3>3つの変数</h3>
+        <p>
+          第1引数として関数を受け取ります。この関数は、要素ごとに呼び出され、実行されるたびに、返された値が新しい配列に追加されます。<br />
+          配列イテレーターメソッドの多くは、この関数に3つの引数が渡されます。
+        </p>
+        <ul>
+          <li>第1引数：配列の値</li>
+          <li>第2引数：配列要素のインデックス</li>
+          <li>第3引数：配列自身</li>
+        </ul>
+
+        <h2>まとめ</h2>
+        <p>
+          array.map()は、配列の便利な処理をするためのメソッド、new
+          Mapは、連想配列などキー（key）とそれに対応する値（value）を対応させて保持するオブジェクトのことでした。<br />
+          今後、使いどころはたくさんありそうです。
+        </p>
+      </div>
+    </div>
+    <div class="tag">
+      <ul>
+        <li class="tagbox">JavaScript</li>
+        <li class="tagbox">map()</li>
+        <li class="tagbox">new Map</li>
+      </ul>
+    </div>
+    <div class="shareicons">
+      <ul>
+        <li class="icon"><img src="images/X.svg" alt="X" /></li>
+        <li class="icon">
+          <img src="images/commnenticon.svg" alt="コメントタグ" />
+        </li>
+      </ul>
+    </div>
+  </article>
+  <div class="nextpage">
+    <span>次の記事</span>
+  </div>
+  <section class="reading">
+    <h2>
+      <span><img src="images/readingicon.png" alt="" /></span>あわせて読みたい
+    </h2>
+    <div class="reading-innner">
+      <div class="article">
+        <div class="img-box">
+          <img src="images/dog.png" alt="学生作品" />
+          <p class="category-tag">学生作品</p>
+        </div>
+        <p class="post-time">
+          <time datetime="2023-08-10">2023年8月10日</time>
+        </p>
+        <h2>学生ポートフォリオ2023</h2>
+        <div class="content">
+          <p class="post">
+            夏休みのような長期休暇は、普段なかなか調べられないことや学習などに時
+            間を費やしたいところです。最近では、JavaScriptのフ…
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="img-box">
+          <img src="images/camp.png" alt="学生生活" />
+          <p class="category-tag">学生生活</p>
+        </div>
+        <p class="post-time">
+          <time datetime="2023-08-10">2023年8月10日</time>
+        </p>
+        <h2>2022年度合同Web制作合宿</h2>
+        <div class="content">
+          <p class="post">
+            夏休みのような長期休暇は、普段なかなか調べられないことや学習などに時
+            間を費やしたいところです。最近では、JavaScriptのフ…
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="img-box">
+          <img src="images/academy.png" alt="学生生活" />
+          <p class="category-tag">Webサイト紹介</p>
+        </div>
+        <p class="post-time">
+          <time datetime="2023-08-10">2023年8月10日</time>
+        </p>
+        <h2>2023 アカデミー賞受賞作品のWebサイト</h2>
+        <div class="content">
+          <p class="post">
+            夏休みのような長期休暇は、普段なかなか調べられないことや学習などに時
+            間を費やしたいところです。最近では、JavaScriptのフ…
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php get_sidebar(); ?>
+</main>
+<?php get_footer(); ?>
