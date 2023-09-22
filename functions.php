@@ -5,7 +5,7 @@ function add_my_scripts() {
 wp_enqueue_script('prism',get_theme_file_uri( '/js/prism.js' ),
 array(),'',true);
 wp_enqueue_script('slick',get_theme_file_uri( '/js/slick.min.js' ),
-array(),'',false);
+array(),'',true);
 wp_enqueue_script('myscript',get_theme_file_uri( '/js/script.js' ),
 array(),'',true);
 }
