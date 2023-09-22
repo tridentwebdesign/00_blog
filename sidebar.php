@@ -38,6 +38,9 @@
         <section class="school">
             <h2>トライデントコンピュータ専門学校</h2>
             <p>トライデントコンピュータ専門学校は、ゲーム、CG、Web、CAD、IT、情報、セキュリティ分野の業界で求められる人材を育成し、全国トップクラスの業界就職率を誇ります。</p>
+            <p><?php the_author_meta("display_name"); ?></p>
+            <p><?php the_author_meta("description"); ?></p>
+            <?php echo get_avatar(get_the_author_meta('ID'), 160); ?>
             <div class="aside-img-box">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/trident_logo.svg" alt="トライデントコンピュータ専門学校">
             </div>
