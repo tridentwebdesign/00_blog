@@ -1,31 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-        <section class="slider">
-        <?php if (have_posts()) : //もし1件以上記事があったら 
-            ?>
-                <?php while (have_posts()) : //記事がある間は繰り返す
-                    the_post(); //次の記事のデータをセットする
-                ?>
-            <article class="box-link" data-link="<?php the_permalink(); ?>">
-                <div class="slider_box">
-                <?php if(has_post_thumbnail()): ?><!-- もしアイキャッチ画像があるのであれば、 -->
-                                <?php the_post_thumbnail( 'medium' ); ?>
-                            <?php else: ?><!--アイキャッチ画像がない場合は、デフォルトの画像を表示-->
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/thumbnail-default.jpg" alt="デフォルトのアイキャッチ画像" /></p>
-                            <?php endif; ?>
-                </div>
-                <h2><?php echo wp_trim_words( get_the_title(), 26, '…' ); ?></h2>
-            </article>
-            <?php endwhile; //ループ終了
-                ?>
-            <?php else : //もし、表示すべき記事がなかったら 
-            ?>
-                <p>まだ記事はありません。</p>
-            <?php endif; //条件分岐終了 
-            ?>
-           
-        </section>
+        <?php get_template_part('slider') ?>
         <h2 class="archive-title"><?php the_archive_title(); ?></h2>
         <div class="posts">
             <?php if (have_posts()) : //もし1件以上記事があったら 
