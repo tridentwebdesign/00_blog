@@ -34,7 +34,7 @@
     <header>
         <nav class="gnav">
             <ul>
-                <li><a href="<?php echo get_page_link(2174); ?>">このブログについて</a></li>
+                <li><a href="">このブログについて</a></li>
                 <li>カテゴリー</li>
             </ul>
         </nav>
