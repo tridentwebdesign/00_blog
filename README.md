@@ -1,2 +1,7 @@
 # 00_blog
- 2023年度 後期集中授業WordPressテーマ制作
+
+2023 年度 後期集中授業 WordPress テーマ制作
+
+## plugin
+
+- Simple Author Box
