@@ -4,7 +4,7 @@
 
 ## 公開サイト
 
-![WebDeBlog（仮）](https://trident-web.kikirara.jp/blog/)
+- [WebDeBlog（仮）](https://trident-web.kikirara.jp/blog/)
 
 ## WordPress
 
@@ -17,6 +17,6 @@
 
 ## 作者
 
-[@TSIT_web_01](https://twitter.com/TSIT_web_01)
+- [@TSIT_web_01](https://twitter.com/TSIT_web_01)
 
 Thank you!
